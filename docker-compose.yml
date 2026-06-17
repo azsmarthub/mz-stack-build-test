@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    ports: ["127.0.0.1:__MZ_PORT__:80"]
+    environment:
+      - GREETING=${GREETING:-default}
